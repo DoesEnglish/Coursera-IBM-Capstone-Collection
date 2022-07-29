@@ -1,5 +1,5 @@
 # Steps to setup development environment
-heroku/python
+
 pip3 install pandas dash
 wget "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/datasets/spacex_launch_dash.csv"
 # following code is a modified version of this skeleton which you can download with
@@ -99,3 +99,4 @@ def scatter(entered_site,payload):
 # Run the app
 if __name__ == '__main__':
     app.run_server()
+    heroku buildpacks:set heroku/python
